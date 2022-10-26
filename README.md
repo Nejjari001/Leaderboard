@@ -1,31 +1,56 @@
-# curriculum-databases-projects-template
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-> This template should be used for database related projects at Microverse.
-> Generate your own repository, update this README and edit all files content while working on projects. You should not be adding any new files unless asked otherwise.
+# Leaderboard Project App
+
+> Description the project.
+
+Displays scores of different game players. Application allows you to submit a player's name along side his/her scores through a form. Scores are displayed on the main page of the App. Refresh to get the latest score additions.
+
+
+## Built With
+
+- Major languages: HTML5, CSS, JavaScript.
+- Frameworks: Webpack.
+- Technologies used: Visual Studio Code, NPM, Chrome, Git, GitHub, GitFlow, Linters.
+
+## Live Demo (if available)
 
 
 ## Getting Started
 
-This repository includes files with plain SQL that can be used to recreate a database:
+**This is an example of how you may give instructions on setting up your project locally.**
+**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
 
-- Use [schema.sql](./schema.sql) to create all tables.
-- Use [data.sql](./data.sql) to populate tables with sample data.
-- Check [queries.sql](./queries.sql) for examples of queries that can be run on a newly created database. **Important note: this file might include queries that make changes in the database (e.g., remove records). Use them responsibly!**
 
+To get a local copy up and running follow these simple example steps.
+
+### Prerequisites
+A computer, Git, Text Editor
+
+### Setup
+Get the link to the repository [here](https://github.com/Nejjari001/Leaderboard)
+
+### Install
+Use the either respository HTTPS or SSH URLS to clone the project on your computer
+Or download the ZIP folder and extract it's contents.
+
+### Usage
+Load the index.html file at the root of the project directory
+
+### Run tests
+Chrome Dev tools
+Linters
+
+### Deployment
+Use Github pages to deploy project at no cost.
 
 ## Authors
 
-👤 **Author1**
+👤 Nejjari Abdelhafid
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@Nejjari001](https://github.com/Nejjari001)
+- Twitter: [@AbdoNJ19](https://https://twitter.com/AbdoNJ19)
+- LinkedIn: [Abdelhafid Nejjari](https://www.linkedin.com/in/abdelhafid-nejjari/)
 
 ## 🤝 Contributing
 
@@ -40,9 +65,7 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - Hat tip to anyone whose code was used
-- Inspiration
-- etc
 
 ## 📝 License
 
-This project is [MIT](./MIT.md) licensed.
+This project is [MIT](./LICENSE) licensed.
