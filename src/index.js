@@ -1,7 +1,7 @@
 import './style.css';
 import displayData from './modules/displayData.js';
 import refreshData from './modules/refreshData.js';
-import apiGameID from './modules/apiGameID.js';
+import apiGameId from './modules/apiGameId.js';
 import saveScore from './modules/saveScore.js';
 
 const addScore = document.querySelector('.add-score');
@@ -27,7 +27,7 @@ window.addEventListener('load', () => {
 
   gameForm.addEventListener('submit', (e) => {
     e.preventDefault();
-    const addGame = apiGameID();
+    const addGame = apiGameId();
     addGame.then((resolve) => {
       let gameName = resolve.result;
       gameName = gameName.substr(14, 20);

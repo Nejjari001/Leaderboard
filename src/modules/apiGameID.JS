@@ -1,6 +1,6 @@
 const gameName = document.getElementById('game-name');
 
-const apiGameID = async () => {
+const apiGameId = async () => {
   const data = { name: gameName.value };
   const fetchUrl = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games';
 
@@ -20,4 +20,4 @@ const apiGameID = async () => {
   }
 };
 
-export default apiGameID;
+export default apiGameId;
