@@ -1,5 +1,5 @@
 import './style.css';
-import apiGameId from './modules/apiGameId';
+import apiGameId from './modules/apiGameId.js';
 import displayData from './modules/displayData.js';
 import refreshData from './modules/refreshData.js';
 import saveScore from './modules/saveScore.js';
