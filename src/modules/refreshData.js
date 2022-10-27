@@ -1,14 +1,16 @@
-import LeaderData from './LeaderData.js';
 import displayData from './displayData.js';
 
 const display = document.querySelector('.names-scores');
-const refresh = document.getElementById('refresh');
+const refresh = document.getElementById('refresh-form"');
 
-const refreshData = () => {
-  refresh.addEventListener('click', () => {
+const refreshDisplay = () => {
+  if (!refresh) return;
+
+  refresh.addEventListener('submit', (e) => {
+    e.preventDefault();
     display.innerHTML = '';
-    displayData(LeaderData);
+    displayData();
   });
 };
 
-export default refreshData;
+export default refreshDisplay;

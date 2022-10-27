@@ -1,19 +1,44 @@
 import './style.css';
-import ScoreResult from './modules/ScoreResult.js';
 import displayData from './modules/displayData.js';
-import LeaderData from './modules/LeaderData.js';
 import refreshData from './modules/refreshData.js';
+import GameId from './modules/GameId.js';
+import saveScore from './modules/saveScore.js';
 
+const addScore = document.querySelector('.add-score');
+const displayScores = document.querySelector('.recent-scores');
+const gameForm = document.getElementById('form-name-game');
 const form = document.getElementById('form');
-const name = document.getElementById('name');
-const score = document.getElementById('score');
 
-form.addEventListener('submit', (event) => {
-  event.preventDefault();
-  const newScore = new ScoreResult(name.value, score.value);
-  LeaderData.push(newScore);
-  form.reset();
+window.addEventListener('load', () => {
+  displayData();
+  refreshData();
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    saveScore();
+    form.reset();
+  });
+
+  if (localStorage.getItem('game')) {
+    gameForm.style.display = 'none';
+    addScore.style.display = 'block';
+    displayScores.style.display = 'block';
+  }
+
+  gameForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const addGame = GameId();
+    addGame.then((resolve) => {
+      let gameName = resolve.result;
+      gameName = gameName.substr(14, 20);
+
+      // Store game name into storage
+      if (gameName) {
+        localStorage.setItem('game', gameName);
+        gameForm.style.display = 'none';
+        addScore.style.display = 'block';
+        displayScores.style.display = 'block';
+      }
+    });
+  });
 });
-
-refreshData();
-displayData(LeaderData);
