@@ -6,7 +6,7 @@ const score = document.getElementById('score');
 const id = localStorage.getItem('game');
 
 const saveScore = async () => {
-  const data = new Score(name.value, score.value);
+  const data = new ScoreResult(name.value, score.value);
   const saveUrl = `https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${id}/scores/`;
 
   const params = {
