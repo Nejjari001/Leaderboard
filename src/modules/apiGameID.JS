@@ -1,14 +1,13 @@
-const gameID = document.getElementById("game-name");
+const gameName = document.getElementById('game-name');
 
 const apiGameID = async () => {
-  const data = { name: gameID.value };
-  const fetchUrl =
-    "https://us-central1-js-capstone-backend.cloudfunctions.net/api/games";
+  const data = { name: gameName.value };
+  const fetchUrl = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games';
 
   const params = {
-    method: "POST",
+    method: 'POST',
     headers: {
-      "Content-Type": "application/json",
+      'Content-Type': 'application/json',
     },
     body: JSON.stringify(data),
   };
