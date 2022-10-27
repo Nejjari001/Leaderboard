@@ -3,7 +3,7 @@ import displayData from './displayData.js';
 const display = document.querySelector('.names-scores');
 const refresh = document.getElementById('refresh-form"');
 
-const refreshData = () => {
+const refreshDisplay = () => {
   if (!refresh) return;
 
   refresh.addEventListener('submit', (e) => {
@@ -13,4 +13,4 @@ const refreshData = () => {
   });
 };
 
-export default refreshData;
+export default refreshDisplay;

@@ -1,8 +1,8 @@
 import './style.css';
 import displayData from './modules/displayData.js';
 import refreshData from './modules/refreshData.js';
-import saveScore from './modules/saveScore.js';
 import GameId from './modules/GameId.js';
+import saveScore from './modules/saveScore.js';
 
 const addScore = document.querySelector('.add-score');
 const displayScores = document.querySelector('.recent-scores');
