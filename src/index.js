@@ -1,9 +1,8 @@
 import './style.css';
-// eslint-disable-next-line import/extensions
-import apiGameId from './modules/apiGameId';
 import displayData from './modules/displayData.js';
 import refreshData from './modules/refreshData.js';
 import saveScore from './modules/saveScore.js';
+import GameId from './modules/GameId.js';
 
 const addScore = document.querySelector('.add-score');
 const displayScores = document.querySelector('.recent-scores');
@@ -28,7 +27,7 @@ window.addEventListener('load', () => {
 
   gameForm.addEventListener('submit', (e) => {
     e.preventDefault();
-    const addGame = apiGameId();
+    const addGame = GameId();
     addGame.then((resolve) => {
       let gameName = resolve.result;
       gameName = gameName.substr(14, 20);
